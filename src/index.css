@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+    --font-editorial: 'Fraunces', Georgia, serif;
+    --font-condensed: 'Oswald', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  html {
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-editorial {
+    font-family: var(--font-editorial);
+  }
+
+  .font-condensed {
+    font-family: var(--font-condensed);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes vinylSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.vinyl-spinning {
+  animation: vinylSpin 14s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vinyl-spinning {
+    animation: none;
+  }
+}

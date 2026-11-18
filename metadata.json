@@ -1,0 +1,8 @@
+{
+  "name": "AI Music Cover",
+  "description": "AI album cover art designer and song cover arrangement studio, configured for AI Studio and Vercel deployment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
